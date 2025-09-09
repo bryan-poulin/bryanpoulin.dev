@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://bryanpoulin.dev/</loc>
+         <lastmod>2025-09-09</lastmod>
+    </url>
+    <url>
+         <loc>https://bryanpoulin.dev/blog/</loc>
+         <lastmod>2025-09-09</lastmod>
+    </url>
+    <url>
+         <loc>https://bryanpoulin.dev/blog/hello-world/</loc>
+         <lastmod>2025-09-09</lastmod>
+    </url>
+    <url>
+         <loc>https://bryanpoulin.dev/blog/archive/2023/</loc>
+         <lastmod>2025-09-09</lastmod>
+    </url>
+    <url>
+         <loc>https://bryanpoulin.dev/blog/category/documentation/</loc>
+         <lastmod>2025-09-09</lastmod>
+    </url>
+    <url>
+         <loc>https://bryanpoulin.dev/blog/category/guides/</loc>
+         <lastmod>2025-09-09</lastmod>
+    </url>
+</urlset>
