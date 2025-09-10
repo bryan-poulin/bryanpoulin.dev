@@ -78,7 +78,7 @@ plugins:
       post_url_format: "{slug}"
   - git-committers:
       enabled: true
-      repository: poulin-poulin/bryanpoulin.dev
+      repository: bryan-poulin/bryanpoulin.dev
       branch: main
       token: !ENV GH_TOKEN
 #   - glightbox:
