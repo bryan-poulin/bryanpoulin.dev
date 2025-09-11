@@ -1,13 +1,19 @@
+# -----------------------------------------------------------------------------
+# Project information
+# -----------------------------------------------------------------------------
 site_name: bryanpoulin.dev
 site_description: Personal blog of Bryan Poulin
 site_author: Bryan Poulin
 site_url: https://bryanpoulin.dev
-
-# repo_url: https://github.com/bryan-poulin/bryanpoulin.dev 
+# repo_url: https://github.com/bryan-poulin/bryanpoulin.dev
 # repo_name: bryan-pouiln/bryanpoulin.dev
+copyright: |
+  &copy; 2025 <a href="https://github.com/bryan-poulin" target="_blank" rel="noopener">Bryan Poulin LLC</a>
 
-# ignores absolute warnings we have
-# warns on missing/broken links
+# -----------------------------------------------------------------------------
+# General configuration
+# -----------------------------------------------------------------------------
+# Ignores absolute warnings we have, warns on missing/broken links, and fails to build on warnings.
 # validation:
 #   omitted_files: warn
 #   not_found: warn
@@ -15,104 +21,22 @@ site_url: https://bryanpoulin.dev
 # # fails to build on warnings
 # strict: true
 
-copyright: |
-  &copy; 2025 <a href="https://github.com/bryan-poulin" target="_blank" rel="noopener">Bryan Poulin LLC</a>
+# -----------------------------------------------------------------------------
+# Navigation
+# -----------------------------------------------------------------------------
+# nav:
+#   - Home: index.md
+#   - About: about.md
+#   - Blog:
+#     - blog/index.md
+#     - Tags: blog/tags.md
 
-extra:
-  # analytics:
-  #   provider: google
-  #.  property: !ENV GOOGLE_ANALYTICS_KEY
-  social:
-    - icon: simple/youtube
-      link: https://youtube.com/@bryanpoulin
-    - icon: fontawesome/brands/github-alt
-      link: https://github.com/bryan-poulin
-
-# extra_css:
-#   - stylesheets/extra.css
-
-hooks:
-  - hooks/socialmedia.py
-
-markdown_extensions:  
-  - abbr
-#   - admonition
-#   - attr_list
-#   - footnotes
-  - md_in_html
-  # - pymdownx.blocks.caption:
-  #     prepend: false
-  #     auto: true
-  #     auto_leval: 0
-#   - pymdownx.caret
-#   - pymdownx.critic
-#   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-#   - pymdownx.highlight:
-#       anchor_linenums: true
-#   - pymdownx.inlinehilite
-#   - pymdownx.keys
-#   - pymdownx.mark
-#   - pymdownx.snippets
-#   - pymdownx.superfences:
-#       custom_fences:
-#         - name: mermaid
-#           class: mermaid
-#           format: !!python/name:pymdownx.superfences.fence_code_format
-#   - pymdownx.tabbed:
-#       alternate_style: true
-#       combine_header_slug: true
-
-plugins:
-  - blog:
-      blog_dir: blog
-      blog_toc: true
-      # archive_date_format: MMMM yyyy
-      # archive_url_date_format: MMMM yyyy
-      # categories_allowed:
-      #   - Holidays
-      #   - News
-      # authors_profiles: true
-      # pagination: true
-      # pagination_per_page: 5
-      # archive_pagination_per_page: 10
-      # categories_pagination_per_page: 10
-      post_url_format: "{slug}"
-  - git-committers:
-      enabled: true
-      repository: bryan-poulin/bryanpoulin.dev
-      branch: main
-      token: !ENV GH_TOKEN
-#   - glightbox:
-#       touchNavigation: false
-#       loop: false
-#       effect: zoom
-#       width: 100%
-#       height: auto
-#       zoomable: true
-#       draggable: true
-  - git-revision-date-localized:
-      type: date
-      fallback_to_build_date: false
-      enable_creation_date: true
-      enabled: true
-  - search:
-      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - social
-  - tags
-#   - rss:
-#       match_path: "blog/posts/.*"
-#       pretty_print: true
-#       rss_feed_enabled: true
-#       date_from_meta:
-#         as_creation: date.created
-#         as_update: date.updated
-
+# -----------------------------------------------------------------------------
+# Theme configuration
+# -----------------------------------------------------------------------------
 theme:
   name: material
-  custom_dir: overrides # (i.e. comments #giscus)
+  custom_dir: overrides
   features:
     # - content.action.edit
     # - content.action.view
@@ -127,7 +51,7 @@ theme:
     # - navigation.top
     - search.highlight
     - search.suggest
-    - toc.follow  
+    - toc.follow
   language: en
   palette:
     - media: "(prefers-color-scheme: dark)"
@@ -150,9 +74,102 @@ theme:
   favicon: assets/images/favicon.png
   logo: assets/images/logo.png
 
-# nav:
-#   - Home: index.md
-#.  - About: about.md
-#   - Blog:
-#     - blog/index.md
-#.    - Tags: blog/tags.md
+# -----------------------------------------------------------------------------
+# Hooks and Extensions
+# -----------------------------------------------------------------------------
+hooks:
+  - hooks/socialmedia.py
+
+markdown_extensions:
+  - abbr
+  # - admonition
+  # - attr_list
+  # - footnotes
+  - md_in_html
+  # - pymdownx.blocks.caption:
+  #     prepend: false
+  #     auto: true
+  #     auto_leval: 0
+  # - pymdownx.caret
+  # - pymdownx.critic
+  # - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # - pymdownx.highlight:
+  #     anchor_linenums: true
+  # - pymdownx.inlinehilite
+  # - pymdownx.keys
+  # - pymdownx.mark
+  # - pymdownx.snippets
+  # - pymdownx.superfences:
+  #     custom_fences:
+  #       - name: mermaid
+  #         class: mermaid
+  #         format: !!python/name:pymdownx.superfences.fence_code_format
+  # - pymdownx.tabbed:
+  #     alternate_style: true
+  #     combine_header_slug: true
+
+# -----------------------------------------------------------------------------
+# Plugins
+# -----------------------------------------------------------------------------
+plugins:
+  - blog:
+      blog_dir: blog
+      blog_toc: true
+      # archive_date_format: MMMM yyyy
+      # archive_url_date_format: MMMM yyyy
+      # categories_allowed:
+      #   - Holidays
+      #   - News
+      # authors_profiles: true
+      # pagination: true
+      # pagination_per_page: 5
+      # archive_pagination_per_page: 10
+      # categories_pagination_per_page: 10
+      post_url_format: "{slug}"
+  - git-committers:
+      enabled: true
+      repository: bryan-poulin/bryanpoulin.dev
+      branch: main
+      token: !ENV GH_TOKEN
+  # - glightbox:
+  #     touchNavigation: false
+  #     loop: false
+  #     effect: zoom
+  #     width: 100%
+  #     height: auto
+  #     zoomable: true
+  #     draggable: true
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: false
+      enable_creation_date: true
+      enabled: true
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - social
+  - tags
+  # - rss:
+  #     match_path: "blog/posts/.*"
+  #     pretty_print: true
+  #     rss_feed_enabled: true
+  #     date_from_meta:
+  #       as_creation: date.created
+  #       as_update: date.updated
+
+# -----------------------------------------------------------------------------
+# Extra configuration and assets
+# -----------------------------------------------------------------------------
+# extra_css:
+#   - stylesheets/extra.css
+extra:
+  # analytics:
+  #   provider: google
+  #   property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: simple/youtube
+      link: https://youtube.com/@bryanpoulin
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/bryan-poulin
