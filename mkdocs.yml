@@ -83,7 +83,7 @@ hooks:
 markdown_extensions:
   - abbr
   # - admonition
-  # - attr_list
+  - attr_list
   # - footnotes
   - md_in_html
   # - pymdownx.blocks.caption:
