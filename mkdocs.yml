@@ -40,6 +40,10 @@ markdown_extensions:
 #   - attr_list
 #   - footnotes
   - md_in_html
+  # - pymdownx.blocks.caption:
+  #     prepend: false
+  #     auto: true
+  #     auto_leval: 0
 #   - pymdownx.caret
 #   - pymdownx.critic
 #   - pymdownx.details
@@ -96,11 +100,8 @@ plugins:
       enabled: true
   - search:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - tags:
-      enabled: true
-#       tags_allowed:
-#         - new year
-#         - festive season
+  - social
+  - tags
 #   - rss:
 #       match_path: "blog/posts/.*"
 #       pretty_print: true
@@ -146,8 +147,8 @@ theme:
   font:
     text: "Roboto"
     code: "Roboto Mono"
-  favicon: assets/favicon.png
-  logo: assets/logo.png
+  favicon: assets/images/favicon.png
+  logo: assets/images/logo.png
 
 # nav:
 #   - Home: index.md
