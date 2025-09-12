@@ -143,7 +143,7 @@ plugins:
   #     zoomable: true
   #     draggable: true
   - git-revision-date-localized:
-      type: date
+      type: timeago
       fallback_to_build_date: false
       enable_creation_date: true
       enabled: true
