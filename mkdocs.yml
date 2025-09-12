@@ -104,11 +104,11 @@ markdown_extensions:
   # - pymdownx.keys
   # - pymdownx.mark
   - pymdownx.snippets
-  - pymdownx.superfences
-  #     custom_fences:
-  #       - name: mermaid
-  #         class: mermaid
-  #         format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
       combine_header_slug: true
