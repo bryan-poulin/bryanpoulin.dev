@@ -4,7 +4,7 @@
 site_name: bryanpoulin.dev
 site_description: Personal blog of Bryan Poulin
 site_author: Bryan Poulin
-site_url: https://bryanpoulin.dev
+site_url: https://bryanpoulin.dev # Important for generating correct feed URLs
 # repo_url: https://github.com/bryan-poulin/bryanpoulin.dev
 # repo_name: bryan-pouiln/bryanpoulin.dev
 copyright: |
@@ -86,10 +86,10 @@ markdown_extensions:
   - attr_list
   # - footnotes
   - md_in_html
-  - pymdownx.blocks.caption:
-      prepend: false
-      auto: true
-      auto_leval: 0
+  # - pymdownx.blocks.caption:
+  #     prepend: false
+  #     auto: true
+  #     auto_leval: 0
   # - pymdownx.caret
   # - pymdownx.critic
   - pymdownx.details
@@ -151,13 +151,13 @@ plugins:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - social
   - tags
-  # - rss:
-  #     match_path: "blog/posts/.*"
-  #     pretty_print: true
-  #     rss_feed_enabled: true
-  #     date_from_meta:
-  #       as_creation: date.created
-  #       as_update: date.updated
+  - rss:
+      match_path: "blog/posts/.*"
+      pretty_print: true
+      rss_feed_enabled: true
+      date_from_meta:
+        as_creation: date.created
+        as_update: date.updated
 
 # -----------------------------------------------------------------------------
 # Extra configuration and assets
