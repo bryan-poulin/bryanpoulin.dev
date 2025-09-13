@@ -14,22 +14,11 @@ copyright: |
 # General configuration
 # -----------------------------------------------------------------------------
 # Ignores absolute warnings we have, warns on missing/broken links, and fails to build on warnings.
-# validation:
-#   omitted_files: warn
-#   not_found: warn
-#   absolute_links: ignore
-# # fails to build on warnings
-# strict: true
-
-# -----------------------------------------------------------------------------
-# Navigation
-# -----------------------------------------------------------------------------
-# nav:
-#   - Home: index.md
-#   - About: about.md
-#   - Blog:
-#     - blog/index.md
-#     - Tags: blog/tags.md
+validation:
+  omitted_files: warn
+  not_found: warn
+  absolute_links: ignore
+strict: true
 
 # -----------------------------------------------------------------------------
 # Theme configuration
@@ -123,11 +112,11 @@ plugins:
   - blog:
       blog_dir: blog
       blog_toc: true
-      # archive_date_format: MMMM yyyy
-      # archive_url_date_format: MMMM yyyy
+      archive_date_format: MMMM yyyy
+      archive_url_date_format: MMMM yyyy
       # categories_allowed:
-      #   - Holidays
-      #   - News
+      #   - Technology
+      #   - Decumentation
       # authors_profiles: true
       # pagination: true
       # pagination_per_page: 5
@@ -173,3 +162,16 @@ extra:
       link: https://youtube.com/@bryanpoulin
     - icon: fontawesome/brands/github-alt
       link: https://github.com/bryan-poulin
+
+# nav:
+#   - Home: index.md
+#   - Category One:
+#       - page-a.md
+#       - page-b.md
+#   - Category Two:
+#     - Category Two Home: category-two/index.md
+#     - page-c.md
+#     - Tags: tags.md
+
+  # Note: A section item (like 'Category Two' cannot be a page.
+  # If you want a landing page for a section, you must add a dedicated index file.
