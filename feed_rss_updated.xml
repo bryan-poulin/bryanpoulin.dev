@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    
+    <title>bryanpoulin.dev</title>
+    <description>Personal blog of Bryan Poulin</description>
+    <link>https://bryanpoulin.dev/</link>
+    <atom:link href="https://bryanpoulin.dev/feed_rss_updated.xml" rel="self" type="application/rss+xml" />
+
+    
+    <managingEditor>Bryan Poulin</managingEditor>
+    
+    <language>en</language>
+
+    
+    <pubDate>Sat, 13 Sep 2025 02:00:48 -0000</pubDate>
+    <lastBuildDate>Sat, 13 Sep 2025 02:00:48 -0000</lastBuildDate>
+    <ttl>1440</ttl>
+
+    
+    <generator>MkDocs RSS plugin - v1.17.3</generator>
+
+    
+    
+    <image>
+      <url>None</url>
+      <title>bryanpoulin.dev</title>
+      <link>https://bryanpoulin.dev/</link>
+    </image>
+    
+
+    
+    
+    <item>
+      <title>Hello world!</title>
+      
+      
+        
+      <author>Team</author>
+        
+      
+      
+      
+      <description>&lt;h1&gt;Hello world!&lt;/h1&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec
+maximus ex. Sed consequat, nulla quis malesuada dapibus, elit metus vehicula
+erat, ut egestas tellus eros at risus. In hac habitasse platea dictumst.
+Phasellus id lacus pulvinar erat consequat pretium. Morbi malesuada arcu mauris
+Nam vel justo sem. Nam placerat purus non varius luctus. Integer pretium leo in
+sem rhoncus, quis gravida orci mollis. Proin id aliquam est. Vivamus in nunc ac
+metus tristique pellentesque. Suspendisse viverra urna in accumsan aliquet.&lt;/p&gt;</description>
+      <link>https://bryanpoulin.dev/blog/hello-world/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+      <source url="https://bryanpoulin.dev/feed_rss_updated.xml">bryanpoulin.dev</source>
+      
+      <guid isPermaLink="true">https://bryanpoulin.dev/blog/hello-world/</guid>
+      
+      <enclosure url="https://bryanpoulin.dev/assets/images/social/blog/posts/post1.png" type="image/png" length="None" />
+      
+    </item>
+    
+  </channel>
+</rss>
