@@ -149,10 +149,8 @@ plugins:
         as_update: date.updated
 
 # -----------------------------------------------------------------------------
-# Extra configuration and assets
+# Extra configuration
 # -----------------------------------------------------------------------------
-# extra_css:
-#   - stylesheets/extra.css
 extra:
   # analytics:
   #   provider: google
