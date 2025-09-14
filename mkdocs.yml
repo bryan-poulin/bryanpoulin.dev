@@ -73,14 +73,11 @@ markdown_extensions:
   - abbr
   - admonition
   - attr_list
-  # - footnotes
+  - footnotes
   - md_in_html
-  # - pymdownx.blocks.caption:
-  #     prepend: false
-  #     auto: true
-  #     auto_leval: 0
-  # - pymdownx.caret
-  # - pymdownx.critic
+  - pymdownx.blocks.caption
+  - pymdownx.caret  
+  - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -132,8 +129,9 @@ plugins:
   #     zoomable: true
   #     draggable: true
   - git-revision-date-localized:
-      type: timeago
-      fallback_to_build_date: false
+      # Optional configuration options:
+      type: date # or datetime, iso_date, iso_datetime, timeago
+      locale: en_US # or other supported locale codes
       enable_creation_date: true
       enabled: true
   - search:
@@ -161,6 +159,9 @@ extra:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/bryan-poulin
 
+# -----------------------------------------------------------------------------
+# Navigation
+# -----------------------------------------------------------------------------
 # nav:
 #   - Home: index.md
 #   - Category One:
@@ -171,5 +172,5 @@ extra:
 #     - page-c.md
 #     - Tags: tags.md
 
-  # Note: A section item (like 'Category Two' cannot be a page.
-  # If you want a landing page for a section, you must add a dedicated index file.
+# Note: A section item (like 'Category Two' cannot be a page.
+# If you want a landing page for a section, you must add a dedicated index file.
