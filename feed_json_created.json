@@ -18,7 +18,7 @@
             "title": "Hello world!",
             "content_html": "<h1>Hello world!</h1>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec\nmaximus ex. Sed consequat, nulla quis malesuada dapibus, elit metus vehicula\nerat, ut egestas tellus eros at risus. In hac habitasse platea dictumst.\nPhasellus id lacus pulvinar erat consequat pretium. Morbi malesuada arcu mauris\nNam vel justo sem. Nam placerat purus non varius luctus. Integer pretium leo in\nsem rhoncus, quis gravida orci mollis. Proin id aliquam est. Vivamus in nunc ac\nmetus tristique pellentesque. Suspendisse viverra urna in accumsan aliquet.</p>",
             "image": "https://bryanpoulin.dev/assets/images/social/blog/posts/post1.png",
-            "date_published": "2023-12-31T00:00:00+00:00",
+            "date_published": "2024-09-09T00:00:00+00:00",
             "authors": [
                 {
                     "name": "Team"
